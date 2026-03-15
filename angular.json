@@ -4,6 +4,7 @@
   "cli": {
     "packageManager": "npm"
   },
+  "defaultProject": "jasper-pos",
   "newProjectRoot": "projects",
   "projects": {
     "jasper-pos": {
@@ -27,6 +28,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "assets",
+                "output": "assets"
               }
             ],
             "styles": [

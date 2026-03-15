@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div class="order-page-wrapper">
+  @if (recommendedItems.length > 0) {
+    <div class="highlight-menu">
+      <h2 class="highlight-menu__title">Recommended</h2>
+      <div class="highlight-menu__items">
+        @for (item of recommendedItems; track item.name) {
+          <app-highlight-menu-item
+            [name]="item.name"
+            [imageSrc]="item.imageSrc"
+            [price]="item.price"
+          ></app-highlight-menu-item>
+        } @empty {
+          <li>There are no items.</li>
+        }
+      </div>
+    </div>
+  }
+
+  <div class="menu-list">
+    <h2 class="menu-list__title">Menu Items</h2>
+    <div class="menu-list__items">
+      @for (category of ordinaryMenuByCategory | keyvalue: preserveOrder; track category.key) {
+        <div class="menu-list__category">
+          <h3 class="menu-list__category-title">{{ category.key }}</h3>
+          <div class="menu-list__category-items">
+            @for (item of category.value; track item.name) {
+              <app-menu-item
+                [name]="item.name"
+                [imageSrc]="item.imageSrc"
+                [price]="item.price"
+              ></app-menu-item>
+            } @empty {
+              <li>There are no items in this category.</li>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+@if (basketCount > 0) {
+  <div class="floating-basket">
+    <button class="floating-basket__cta">
+      <span> Basket </span>
+      <span id="basket-count">{{ basketCount }} items</span>
+    </button>
+  </div>
+}

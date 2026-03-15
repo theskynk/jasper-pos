@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+// @use 'tailwindcss';
+@use 'stylesheets/normalize';
+
+:root {
+  --header-height: 55px;
+
+  --color-core-black: #14140f;
+  --color-core-green-100: #a3ccab;
+  --color-core-green-200: #4e8864;
+  --color-core-green-300: #397454;
+  --color-core-green-400: #34675c;
+  --color-core-green-500: #053d38;
+}

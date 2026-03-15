@@ -1,0 +1,20 @@
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.menu-image {
+  aspect-ratio: 1 / 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.menu-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin-left: 16px;
+}

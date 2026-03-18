@@ -23,13 +23,11 @@
   // box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.15);
 
   .floating-basket__cta {
-    // all: unset;
     cursor: pointer;
+    user-select: none;
     font-size: 20px;
     font-weight: 500;
-    color: var(--color-cta-text);
     padding: 12px 40px;
-    // border-radius: 999px;
     border-radius: 12px;
     border: none;
     width: 100%;

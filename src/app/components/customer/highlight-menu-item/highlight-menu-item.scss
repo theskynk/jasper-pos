@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
+  position: relative;
 }
 
 .menu-image {
@@ -13,4 +14,29 @@
   max-width: 100%;
   border-radius: 12px;
   object-fit: cover;
+}
+
+.menu-image-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.add-menu-button {
+  all: unset;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-core-green-300);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
 }

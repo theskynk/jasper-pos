@@ -1,7 +1,26 @@
 <div class="menu-item">
   <img class="menu-image" src="{{ imageSrc }}" alt="{{ name }}" />
-  <div class="menu-details">
-    <p class="menu-name">{{ name }}</p>
-    <p class="menu-price">{{ price }} ฿</p>
+
+  <div class="menu-detail-wrapper">
+    <div class="menu-details">
+      <p class="menu-name">{{ name }}</p>
+      <p class="menu-price">{{ price }} ฿</p>
+    </div>
+
+    <button class="add-menu-button" (click)="onButtonClick()" title="Add menu item">
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          viewBox="0 0 16 13"
+        >
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+          />
+        </svg>
+      </span>
+    </button>
   </div>
 </div>

@@ -11,4 +11,9 @@ export class MenuItem {
   @Input() description: string = '';
   @Input() imageSrc!: string;
   @Input() price!: number;
+
+  onButtonClick() {
+    console.log(`Added ${this.name} to the order.`);
+    alert(`Added ${this.name} to the order.`);
+  }
 }

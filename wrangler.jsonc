@@ -21,7 +21,7 @@
   "r2_buckets": [
     {
       "binding": "IMAGES_BUCKET",
-      "bucket_name": "jasper-pos-images"
+      "bucket_name": "jasper-pos"
     }
   ]
 }

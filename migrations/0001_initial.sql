@@ -1,6 +1,6 @@
 -- Migration: create initial tables
--- Run locally:  npx wrangler d1 migrations apply jasper-pos-db --local
--- Run remotely: npx wrangler d1 migrations apply jasper-pos-db --remote
+-- Run locally:  npx wrangler d1 migrations apply jasper-pos --local
+-- Run remotely: npx wrangler d1 migrations apply jasper-pos --remote
 
 CREATE TABLE IF NOT EXISTS users (
   id            INTEGER  PRIMARY KEY AUTOINCREMENT,

@@ -11,9 +11,9 @@
     "deploy": "npm run build && wrangler deploy",
     "preview": "npm run build && wrangler dev",
     "cf-typegen": "wrangler types",
-    "db:create": "wrangler d1 create jasper-pos-db",
-    "db:migrate:local": "wrangler d1 migrations apply jasper-pos-db --local",
-    "db:migrate:remote": "wrangler d1 migrations apply jasper-pos-db --remote"
+    "db:create": "wrangler d1 create jasper-pos",
+    "db:migrate:local": "wrangler d1 migrations apply jasper-pos --local",
+    "db:migrate:remote": "wrangler d1 migrations apply jasper-pos --remote"
   },
   "private": true,
   "packageManager": "npm@11.1.0",

@@ -1,6 +1,6 @@
 -- Migration: seed initial menu items
--- Run locally:  npx wrangler d1 migrations apply jasper-pos-db --local
--- Run remotely: npx wrangler d1 migrations apply jasper-pos-db --remote
+-- Run locally:  npx wrangler d1 migrations apply jasper-pos --local
+-- Run remotely: npx wrangler d1 migrations apply jasper-pos --remote
 
 INSERT INTO menu_items (name, description, price, category) VALUES
   ('Espresso',      'Single shot of espresso',          3.50, 'drinks'),

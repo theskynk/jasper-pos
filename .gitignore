@@ -29,6 +29,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Wrangler local state (local D1 database, build cache)
+.wrangler/
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/

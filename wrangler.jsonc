@@ -1,12 +1,21 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jasper-pos-frontend",
+  "name": "jasper-pos",
   "compatibility_date": "2025-09-27",
+  "main": "worker/index.ts",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "dist/jasper-pos/browser",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jasper-pos",
+      "database_id": "7d91d942-5418-4b3f-b5d5-5f51eb913380",
+      "migrations_dir": "migrations"
+    }
+  ]
 }

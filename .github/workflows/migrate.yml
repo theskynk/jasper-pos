@@ -1,13 +1,7 @@
 name: Apply D1 Migrations
 
 on:
-  workflow_dispatch: # manual trigger from GitHub Actions UI
-  push:
-    paths:
-      - 'migrations/**'
-    branches:
-      - main
-      - feature/integrate-workers-backend
+  workflow_dispatch: # manual trigger only — go to Actions tab → Run workflow
 
 jobs:
   migrate:

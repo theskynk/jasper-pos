@@ -17,5 +17,11 @@
       "database_id": "7d91d942-5418-4b3f-b5d5-5f51eb913380",
       "migrations_dir": "migrations"
     }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGES_BUCKET",
+      "bucket_name": "jasper-pos-images"
+    }
   ]
 }

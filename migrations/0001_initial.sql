@@ -19,7 +19,8 @@ CREATE TABLE IF NOT EXISTS menu_items (
   id          INTEGER  PRIMARY KEY AUTOINCREMENT,
   name_en     TEXT     NOT NULL,
   name_th     TEXT     NOT NULL,
-  description TEXT,
+  description_en TEXT,
+  description_th TEXT,
   price       REAL     NOT NULL,
   category    TEXT     NOT NULL,
   available   INTEGER  NOT NULL DEFAULT 1,
@@ -58,11 +59,11 @@ CREATE TABLE IF NOT EXISTS order_items (
 );
 
 -- Seed menu items
-INSERT INTO menu_items (name_en, name_th, description, price, category) VALUES
-  ('Espresso',      'เอสเปรสโซ่',     'Single shot of espresso',         3.50, 'drinks'),
-  ('Latte',         'ลาเต้',           'Espresso with steamed milk',       4.50, 'drinks'),
-  ('Croissant',     'ครัวซองต์',       'Buttery plain croissant',          2.50, 'food'),
-  ('Club Sandwich', 'คลับแซนด์วิช',   'Chicken, bacon, lettuce, tomato',  8.00, 'food');
+INSERT INTO menu_items (name_en, name_th, description_en, description_th, price, category) VALUES
+  ('Espresso',      'เอสเปรสโซ่',     'Single shot of espresso',         'เอสเปรสโซ่ช็อตเดียว',         3.50, 'drinks'),
+  ('Latte',         'ลาเต้',           'Espresso with steamed milk',       'เอสเปรสโซ่กับนมร้อน',       4.50, 'drinks'),
+  ('Croissant',     'ครัวซองต์',       'Buttery plain croissant',          'ครัวซองต์เนยธรรมดา',          2.50, 'food'),
+  ('Club Sandwich', 'คลับแซนด์วิช',   'Chicken, bacon, lettuce, tomato',  'ไก่, เบคอน, ผักกาด, มะเขือเทศ',  8.00, 'food');
 
 -- Seed tables
 INSERT INTO tables (name, capacity) VALUES
